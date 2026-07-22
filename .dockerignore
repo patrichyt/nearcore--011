@@ -1,0 +1,28 @@
+.idea/
+.vscode/
+
+docker/
+!docker/scripts/
+ops/
+!ops/run.sh
+!ops/tendermint-config.toml
+
+**/target
+storage/
+keystore/
+tmp/
+sandbox/
+
+# Generated bounty-localnet state — must not enter the build context.
+tools/bounty-localnet/network/
+
+# Ignore Vim swapfiles
+*.swp
+
+# Docker files shouldn't invalidate the cache because Docker itself will use these appropriately
+.dockerignore
+Dockerfile
+Dockerfile.nightly
+
+# Ignore git internal structure
+.git/
